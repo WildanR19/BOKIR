@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BOKIR</string>
+    <string name="btn_link_login">Sudah Punya Akun</string>
+    <string name="btn_sign_up">Daftar</string>
+    <string name="hint_password">Password</string>
+    <string name="register">REGISTER</string>
+    <string name="not_register">Sudah Punya Akun</string>
+    <string name="name">Nama</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="or">or</string>
+    <string name="don_t_remember_password">Don\'t Remember password?</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="login_now">login now</string>
+    <string name="email_address">email address</string>
+    <string name="sign_in_google">Daftar Dengan Google</string>
+</resources>

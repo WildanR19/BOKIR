@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4682B4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="login_button">#008B8B</color>
+    <color name="register_bg">#bdc3c7</color>
+
+    <color name="orange">#f39c12</color>
+    <color name="orangemuda">#ffe26e</color>
+    <color name="orangeT">#64f39c12</color>
+    <color name="orangemudaT">#64ffe26e</color>
+    <color name="pumpkin">#d35400</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPurple">#983CFF</color>
+    <color name="colorPurpleT">#64983cff</color>
+    <color name="colorBlue">#2FB4FF</color>
+    <color name="colorBlueT">#642fb4ff</color>
+</resources>
