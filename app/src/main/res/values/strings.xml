@@ -23,4 +23,17 @@
     <string name="contact_string">Contact</string>
     <string name="settings_string">Settings</string>
     <string name="log_out_string">Log Out</string>
+
+    <string name="notifications_string">Notifications</string>
+    <string name="newsletter_string">Newsletter</string>
+    <string name="your_preferences_ek1_string">Your Preferences</string>
+    <string name="bokirapp_string">BokirApp</string>
+    <string name="jl_nakula_sadewa_string">Jl.Nakula sadewa</string>
+    <string name="____________string">**********</string>
+    <string name="bokir_app_email_com_string">bokir.app@email.com</string>
+    <string name="nama_lengkap_string">Nama Lengkap</string>
+    <string name="address_string">Address</string>
+    <string name="password_string">Password</string>
+    <string name="email_string">Email</string>
+    <string name="your_information_ek1_string">Your Information</string>
 </resources>
