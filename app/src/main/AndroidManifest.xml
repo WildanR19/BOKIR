@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SettingActivity" android:theme="@style/SettingTheme"></activity>
-        <activity android:name=".ParkirActivity" />
         <activity android:name=".CariActivity" />
         <activity android:name=".RegisActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity">
+        </activity>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

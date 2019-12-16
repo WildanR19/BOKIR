@@ -26,7 +26,7 @@
     <color name="item1">#fc4a1a</color>
     <color name="item2">#f7b733</color>
 
-    <color name="_bg__setting_color">#ffffff</color>
+    <color name="_bg__settings_color">#ffffff</color>
     <color name="rectangle_color">#f39c12</color>
     <color name="notifications_color">#ffffff</color>
     <color name="switch_body_color">#f0f4f8</color>

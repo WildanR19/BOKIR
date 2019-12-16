@@ -13,8 +13,9 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private Button btnLogin, btnRegis;
+    private Button btnLogin;
     private EditText username ,password;
+    TextView btnRegis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
                 SharedPreferences prefer = getSharedPreferences("MYDATA",MODE_PRIVATE);
                 String username = prefer.getString("user", null);
                 String password = prefer.getString("pass", null);
-                System.out.println("User : "+user+" = "+username+", dan pass = "+pass+"="+password);
+                System.out.println("user : "+user+" = "+username+", dan pass = "+pass+"="+password);
                 if ((username != null && password != null) && (username.equals(user) && password.equals(pass))){
                     Intent iMain = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(iMain);
@@ -46,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent iRegis = new Intent(LoginActivity.this,RegisActivity.class);
+                startActivity(iRegis);
                 finish();
             }
         });

@@ -438,7 +438,7 @@
                 android:layout_marginLeft="23dp"
                 android:layout_marginTop="20dp"
                 android:layout_width="150dp"
-                android:layout_height="31dp"
+                android:layout_height="match_parent"
                 android:text="@string/your_information_ek1_string"
                 />
 
