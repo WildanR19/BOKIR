@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".ContactActivity"
     android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_email_black_24dp"/>
+                android:src="@drawable/mail"/>
             <TextView
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
@@ -65,7 +65,7 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_phone_android_black_24dp"/>
+                android:src="@drawable/bell"/>
             <TextView
                 android:textStyle="bold"
 
@@ -84,7 +84,7 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_group_add_black_24dp"/>
+                android:src="@drawable/star"/>
             <TextView
                 android:textStyle="bold"
 
@@ -103,7 +103,7 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_forum_black_24dp"/>
+                android:src="@drawable/like"/>
             <TextView
                 android:textStyle="bold"
 
@@ -117,7 +117,7 @@
 
     <Button
         android:textColor="#fff"
-        android:background="@drawable/buttonstyleithgradient"
+        android:background="@drawable/bt_uigoogle"
         android:layout_marginTop="35dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
