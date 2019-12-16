@@ -1,9 +1,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="wrap_content" >
+    android:layout_width="match_parent" android:layout_height="match_parent" >
 
         <RelativeLayout android:id="@+id/content_container"
-            android:layout_width="wrap_content"
-            android:layout_height="640dp" >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
             <View android:id="@+id/_bg__settings"
                 android:background="@drawable/_bg__settings_shape"
@@ -17,6 +17,7 @@
             <RelativeLayout android:id="@+id/your_preferences"
                 android:layout_marginTop="426dp"
                 android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 >
@@ -24,13 +25,12 @@
 
                 <RelativeLayout android:id="@+id/card"
                     android:layout_marginTop="0dp"
-                    android:layout_marginStart="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     >
 
                     <View android:id="@+id/rectangle"
-                        android:background="@drawable/rectangle_shape"
+                        android:background="@drawable/rectangle_shape_set"
                         android:layout_marginLeft="0dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
@@ -70,7 +70,7 @@
                     >
 
                     <View android:id="@+id/switch_body"
-                        android:background="@drawable/switch_body_shape"
+                        android:background="@drawable/switch_body_shape_set"
                         android:layout_marginLeft="0dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
@@ -78,7 +78,7 @@
                         android:layout_height="22dp" />
 
                     <View android:id="@+id/switch_circle"
-                        android:background="@drawable/switch_circle_shape"
+                        android:background="@drawable/switch_circle_shape_set"
                         android:layout_marginLeft="13dp"
                         android:layout_marginStart="13dp"
                         android:layout_marginTop="0dp"
@@ -114,7 +114,7 @@
                     >
 
                     <View android:id="@+id/switch_body_ek1"
-                        android:background="@drawable/switch_body_ek1_shape"
+                        android:background="@drawable/switch_body_ek1_shape_set"
                         android:layout_marginLeft="0dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
@@ -122,7 +122,7 @@
                         android:layout_height="22dp" />
 
                     <View android:id="@+id/switch_circle_ek1"
-                        android:background="@drawable/switch_circle_ek1_shape"
+                        android:background="@drawable/switch_circle_ek1_shape_set"
                         android:alpha="0.81960784313725"
                         android:layout_marginLeft="0dp"
                         android:layout_marginStart="0dp"
@@ -180,7 +180,7 @@
                     >
 
                     <View android:id="@+id/rectangle_ek1"
-                        android:background="@drawable/rectangle_ek1_shape"
+                        android:background="@drawable/rectangle_ek1_shape_set"
                         android:layout_marginLeft="0dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
