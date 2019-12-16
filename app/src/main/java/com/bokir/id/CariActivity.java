@@ -17,6 +17,10 @@ public class CariActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cari);
+
+        getSupportActionBar().setTitle("Cari Tempat");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.bokir);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(CariActivity.this);
         recyclerView.setLayoutManager(layoutManager);
