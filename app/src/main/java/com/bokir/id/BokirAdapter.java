@@ -28,7 +28,10 @@ public class BokirAdapter extends RecyclerView.Adapter<BokirAdapter.BokirViewHol
 
     @Override
     public void onBindViewHolder(BokirAdapter.BokirViewHolder holder, int position) {
-
+        holder.jdl.setText(bokirs.get(position).getJdl());
+        holder.alm.setText(bokirs.get(position).getAlamt());
+        holder.waktu.setText(bokirs.get(position).getWaktu());
+        holder.freeint.setText(bokirs.get(position).getFreeint());
     }
 
     @Override
