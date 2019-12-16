@@ -17,8 +17,10 @@
 
     <style name="SettingTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/orange</item>
-        <item name="colorPrimaryDark">@color/orangemuda</item>
+        <item name="colorPrimaryDark">@color/orange</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:homeAsUpIndicator">@drawable/arrow_left</item>
+        <item name="android:clickable">true</item>
     </style>
 
 </resources>

@@ -9,7 +9,14 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SettingActivity" android:theme="@style/SettingTheme"></activity>
+        <activity android:name=".SettingActivity"
+            android:theme="@style/SettingTheme"
+            android:parentActivityName="com.bokir.id.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bokir.id.MainActivity"
+                />
+        </activity>
         <activity android:name=".CariActivity" />
         <activity android:name=".RegisActivity" />
         <activity android:name=".LoginActivity"  android:theme="@style/AppTheme">
@@ -21,7 +28,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:noHistory="true"/>
 
         <meta-data
             android:name="preloaded_fonts"

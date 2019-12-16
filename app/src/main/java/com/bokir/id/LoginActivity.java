@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
                 if ((username != null && password != null) && (username.equals(user) && password.equals(pass))){
                     Intent iMain = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(iMain);
+                    finish();
                 }else{
                     Toast.makeText(getApplicationContext(), "Belum Register ...!!! atau Username Tidak Ada", Toast.LENGTH_SHORT).show();
                 }
