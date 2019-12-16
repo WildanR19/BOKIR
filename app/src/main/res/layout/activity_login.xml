@@ -215,7 +215,7 @@
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:text="LOGIN WITH GOOGLE"
-                android:textColor="@color/colorPurple" />
+                android:textColor="@color/orange" />
         </RelativeLayout>
     </ScrollView>
 
