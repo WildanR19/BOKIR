@@ -11,10 +11,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SettingActivity"
             android:theme="@style/SettingTheme"
-            android:parentActivityName="com.bokir.id.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.bokir.id.MainActivity"
+                android:value=".MainActivity"
                 />
         </activity>
         <activity android:name=".CariActivity" />
