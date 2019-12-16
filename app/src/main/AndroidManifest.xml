@@ -9,18 +9,33 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SettingActivity"
-            android:theme="@style/SettingTheme"
-            android:parentActivityName=".MainActivity">
+        <activity android:name=".ScanActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SettingTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"
-                />
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".CariActivity" />
+        <activity
+            android:name=".SettingActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SettingTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CariActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SettingTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".RegisActivity" />
-        <activity android:name=".LoginActivity"  android:theme="@style/AppTheme">
-        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme"></activity>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,20 +44,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".ContactActivity"
-            android:theme="@style/SettingTheme"
-            android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".ContactActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SettingTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"
-                />
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".DetailPembayaran"
-            android:parentActivityName=".CariActivity"
-            >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CariActivity"
-                />
+        <activity
+            android:name=".DetailPembayaran"
+            android:parentActivityName=".CariActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CariActivity" />
         </activity>
 
         <meta-data
