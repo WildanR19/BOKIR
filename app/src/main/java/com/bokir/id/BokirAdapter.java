@@ -63,12 +63,12 @@ public class BokirAdapter extends RecyclerView.Adapter<BokirAdapter.BokirViewHol
                     int position = getAdapterPosition();
                     if(position != RecyclerView.NO_POSITION) {
                         konteks = v.getContext();
-                        Intent i = new Intent(konteks, DetailPembayaran.class);
-                        i.putExtra(KEY_JDL, bokirs.get(position).getJdl());
-                        i.putExtra(KEY_ALM, bokirs.get(position).getAlamt());
-                        i.putExtra(KEY_WKT, bokirs.get(position).getWaktu());
-                        i.putExtra(KEY_FREE, bokirs.get(position).getFreeint());
-                        konteks.startActivity(i);
+                        Intent is = new Intent(konteks, DetailPembayaran.class);
+                        is.putExtra(KEY_JDL, bokirs.get(position).getJdl());
+                        is.putExtra(KEY_ALM, bokirs.get(position).getAlamt());
+                        is.putExtra(KEY_WKT, bokirs.get(position).getWaktu());
+                        is.putExtra(KEY_FREE, bokirs.get(position).getFreeint());
+                        konteks.startActivity(is);
                     }
                 }
             });
