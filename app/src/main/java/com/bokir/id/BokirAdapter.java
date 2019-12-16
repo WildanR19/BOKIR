@@ -1,8 +1,11 @@
 package com.bokir.id;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -41,6 +44,13 @@ public class BokirAdapter extends RecyclerView.Adapter<BokirAdapter.BokirViewHol
 
     public class BokirViewHolder extends RecyclerView.ViewHolder {
         TextView jdl,alm,waktu,free,freeint;
+        Button btn;
+        Context konteks;
+        public String KEY_JDL = "judul";
+        public String KEY_ALM = "judul";
+        public String KEY_WKT = "judul";
+        public String KEY_FREE = "judul";
+
         public BokirViewHolder(View itemView) {
             super(itemView);
             jdl = (TextView) itemView.findViewById(R.id.Judul);
@@ -48,6 +58,23 @@ public class BokirAdapter extends RecyclerView.Adapter<BokirAdapter.BokirViewHol
             waktu = (TextView) itemView.findViewById(R.id.waktu);
             free = (TextView) itemView.findViewById(R.id.free);
             freeint = (TextView) itemView.findViewById(R.id.freeint);
+            btn = (Button) itemView.findViewById(R.id.book);
+
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    konteks = v.getContext();
+                    int position = getAdapterPosition();
+                    if(position != RecyclerView.NO_POSITION){
+                        Intent i = new Intent(konteks, DetailPembayaran.class);
+                        i.putExtra(KEY_JDL, bokirs.get(position).getJdl());
+                        i.putExtra(KEY_ALM, bokirs.get(position).getAlamt());
+                        i.putExtra(KEY_WKT, bokirs.get(position).getWaktu());
+                        i.putExtra(KEY_FREE, bokirs.get(position).getFreeint());
+                        konteks.startActivity(i);
+                    }
+                }
+            });
 
         }
     }
