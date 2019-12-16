@@ -15,6 +15,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Deskripsi" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:homeAsUpIndicator">@drawable/arrow_left</item>
+        <item name="android:clickable">true</item>
+    </style>
+
     <style name="SettingTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryDark">@color/orange</item>
