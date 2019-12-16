@@ -20,6 +20,7 @@ public class CariActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.bokir);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(CariActivity.this);
         recyclerView.setLayoutManager(layoutManager);
+        ambdata();
         bokirAdapter = new BokirAdapter(bokirs);
         recyclerView.setAdapter(bokirAdapter);
     }
