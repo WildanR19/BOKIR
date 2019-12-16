@@ -17,4 +17,12 @@
     <color name="colorPurpleT">#64983cff</color>
     <color name="colorBlue">#2FB4FF</color>
     <color name="colorBlueT">#642fb4ff</color>
+
+    <color name="_bg__dashboard_color">#ffffff</color>
+    <color name="rectangle_1_color">#ffffff00</color>
+    <color name="bokir_color">#ffffff</color>
+    <color name="booking_parkir_ek1_color">#656565</color>
+
+    <color name="item1">#fc4a1a</color>
+    <color name="item2">#f7b733</color>
 </resources>

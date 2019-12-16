@@ -14,4 +14,13 @@
     <string name="login_now">login now</string>
     <string name="email_address">email address</string>
     <string name="sign_in_google">Daftar Dengan Google</string>
+
+    <string name="bokir_string">BOKIR</string>
+    <string name="booking_parkir_string">Booking Parkir</string>
+    <string name="booking_parkir_ek1_string">Cari Tempat</string>
+    <string name="riwayat_string">Riwayat</string>
+    <string name="scan_string">Scan</string>
+    <string name="contact_string">Contact</string>
+    <string name="settings_string">Settings</string>
+    <string name="log_out_string">Log Out</string>
 </resources>

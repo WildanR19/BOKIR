@@ -1,120 +1,319 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#EFEFEF"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent" >
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
-        android:id="@+id/appbar"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.design.widget.CollapsingToolbarLayout
+        <RelativeLayout android:id="@+id/content_container"
             android:layout_width="match_parent"
-            android:id="@+id/ctolbar"
-            android:fitsSystemWindows="true"
-            app:contentScrim="@color/colorPrimary"
-            app:expandedTitleMargin="5dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-            android:layout_height="200dp">
+            android:layout_height="720dp" >
 
-            <LinearLayout
+            <View android:id="@+id/_bg__dashboard"
+                android:background="@drawable/_bg__dashboard_shape"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="360dp"
+                android:layout_height="720dp" />
+
+            <View android:id="@+id/rectangle_1"
+                android:background="@drawable/rectangle_1_shape"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/gradient"
-                android:orientation="vertical"
-                android:paddingTop="16dp">
-
-                <RelativeLayout
-                    android:id="@+id/rltop"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingLeft="10dp"
-                    android:layout_gravity="center_horizontal">
-
-                    <com.devatapixel.dashboard.customfonts.TextView_Roboto_Medium
-                        android:id="@+id/tvtitle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="8dp"
-                        android:fontFamily="sans-serif"
-                        android:letterSpacing="0.1"
-                        android:text="DESIGN DASHBOARD"
-                        android:textColor="@android:color/white"
-                        android:textSize="25dp"
-                        android:textStyle="bold"
-                        android:visibility="visible" />
-
-                    <com.devatapixel.dashboard.customfonts.TextView_Roboto_Medium
-                        android:id="@+id/tvdesc"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="sans-serif"
-                        android:letterSpacing="0.1"
-                        android:text="Applications"
-                        android:layout_below="@+id/tvtitle"
-                        android:textColor="@android:color/white"
-                        android:textSize="13dp" />
-
-                    <ImageView
-                        android:id="@+id/profile_image"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerHorizontal="true" />
-
-                </RelativeLayout>
-
-            </LinearLayout>
+                android:layout_height="200dp" />
 
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:title="My Profile"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            <RelativeLayout android:id="@+id/group_1"
+                android:layout_marginTop="31dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
 
-        </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
+                <TextView android:id="@+id/bokir"
+                    android:fontFamily="Helvetica Neue"
+                    android:textSize="20sp"
+                    android:textColor="@color/bokir_color"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="67dp"
+                    android:layout_height="26dp"
+                    android:text="@string/bokir_string"
+                    />
 
-    <android.support.v4.widget.NestedScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:behavior_overlapTop="100dp"
-        app:layout_anchor="@id/appbar"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <TextView android:id="@+id/booking_parkir"
+                    android:fontFamily="Helvetica Neue"
+                    android:textSize="14sp"
+                    android:textColor="@color/bokir_color"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_width="96dp"
+                    android:layout_height="19dp"
+                    android:text="@string/booking_parkir_string"
+                    />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:focusableInTouchMode="true"
-            android:orientation="vertical"
-            tools:context=".MainActivity"
-            tools:showIn="@layout/activity_main">
+            </RelativeLayout>
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
 
-        </LinearLayout>
+            <RelativeLayout android:id="@+id/item"
+                android:layout_marginTop="105dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                >
 
-    </android.support.v4.widget.NestedScrollView>
+                <View android:id="@+id/rectangle_2"
+                    android:background="@drawable/rectangle_2_ek5_shape"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="150dp"
+                    android:layout_height="184dp" />
 
-</android.support.design.widget.CoordinatorLayout>
+                <TextView android:id="@+id/booking_parkir_ek1"
+                    android:fontFamily="Helvetica Neue"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/booking_parkir_ek1_color"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="137dp"
+                    android:layout_width="109dp"
+                    android:layout_height="20dp"
+                    android:text="@string/booking_parkir_ek1_string"
+                    />
+
+                <ImageView android:id="@+id/p"
+                    android:src="@drawable/p"
+                    android:contentDescription="p"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_width="92dp"
+                    android:layout_height="90dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/item_ek1"
+                android:layout_marginTop="105dp"
+                android:layout_marginStart="215dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                >
+
+                <View android:id="@+id/rectangle_2_ek1"
+                    android:background="@drawable/rectangle_2_ek1_shape"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="150dp"
+                    android:layout_height="184dp" />
+
+                <TextView android:id="@+id/riwayat"
+                    android:fontFamily="Helvetica Neue"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/booking_parkir_ek1_color"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="137dp"
+                    android:layout_width="61dp"
+                    android:layout_height="20dp"
+                    android:text="@string/riwayat_string"
+                    />
+
+                <ImageView android:id="@+id/parchment"
+                    android:src="@drawable/parchment"
+                    android:contentDescription="parchment"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_width="92dp"
+                    android:layout_height="92dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout android:id="@+id/item_ek2"
+                android:layout_marginTop="309dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                >
+
+                <View android:id="@+id/rectangle_2_ek2"
+                    android:background="@drawable/rectangle_2_ek2_shape"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="150dp"
+                    android:layout_height="184dp" />
+
+                <TextView android:id="@+id/scan"
+                    android:fontFamily="Helvetica Neue"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/booking_parkir_ek1_color"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginTop="137dp"
+                    android:layout_width="41dp"
+                    android:layout_height="20dp"
+                    android:text="@string/scan_string"
+                    />
+
+                <ImageView android:id="@+id/qr_code"
+                    android:src="@drawable/qr_code"
+                    android:contentDescription="qr_code"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout android:id="@+id/item_ek3"
+                android:layout_marginTop="309dp"
+                android:layout_marginStart="215dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                >
+
+                <View android:id="@+id/rectangle_2_ek3"
+                    android:background="@drawable/rectangle_2_ek3_shape"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="150dp"
+                    android:layout_height="184dp" />
+
+                <TextView android:id="@+id/contact"
+                    android:fontFamily="Helvetica Neue"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/booking_parkir_ek1_color"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="137dp"
+                    android:layout_width="61dp"
+                    android:layout_height="20dp"
+                    android:text="@string/contact_string"
+                    />
+
+                <ImageView android:id="@+id/contact_ek1"
+                    android:src="@drawable/contact_ek1"
+                    android:contentDescription="contact_ek1"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout android:id="@+id/item_ek4"
+                android:layout_marginTop="513dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                >
+
+                <View android:id="@+id/rectangle_2_ek4"
+                    android:background="@drawable/rectangle_2_ek4_shape"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="150dp"
+                    android:layout_height="184dp" />
+
+                <TextView android:id="@+id/settings"
+                    android:fontFamily="Helvetica Neue"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/booking_parkir_ek1_color"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="137dp"
+                    android:layout_width="63dp"
+                    android:layout_height="20dp"
+                    android:text="@string/settings_string"
+                    />
+
+                <ImageView android:id="@+id/settings_gears"
+                    android:src="@drawable/settings_gears"
+                    android:contentDescription="settings_gears"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout android:id="@+id/item_ek5"
+                android:layout_marginTop="513dp"
+                android:layout_marginStart="215dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                >
+
+                <View android:id="@+id/rectangle_2_ek5"
+                    android:background="@drawable/rectangle_2_ek5_shape"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="150dp"
+                    android:layout_height="184dp" />
+
+                <TextView android:id="@+id/log_out"
+                    android:fontFamily="Helvetica Neue"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/booking_parkir_ek1_color"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="137dp"
+                    android:layout_width="61dp"
+                    android:layout_height="20dp"
+                    android:text="@string/log_out_string"
+                    />
+
+                <ImageView android:id="@+id/logout"
+                    android:src="@drawable/logout"
+                    android:contentDescription="logout"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp" />
+
+            </RelativeLayout>
+
+            <ImageView android:id="@+id/user"
+                android:src="@drawable/user"
+                android:contentDescription="user"
+                android:layout_marginLeft="333dp"
+                android:layout_marginStart="333dp"
+                android:layout_marginTop="31dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp" />
+
+        </RelativeLayout>
+
+</ScrollView>
