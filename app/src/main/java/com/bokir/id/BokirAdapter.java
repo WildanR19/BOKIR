@@ -28,7 +28,7 @@ public class BokirAdapter extends RecyclerView.Adapter<BokirAdapter.BokirViewHol
 
     @Override
     public void onBindViewHolder(BokirAdapter.BokirViewHolder holder, int position) {
-        holder.jdl.setText();
+
     }
 
     @Override
