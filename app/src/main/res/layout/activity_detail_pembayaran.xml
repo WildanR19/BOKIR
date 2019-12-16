@@ -3,8 +3,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailPembayaran">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailPembayaran"
+    android:background="#f0f0f0"
+    android:padding="15dp">
 
+    <RelativeLayout
+        android:id="@+id/digital"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_pemb"
+        android:layout_marginBottom="10dp"
+        >
+
+        <View
+            android:id="@+id/hr1"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f0f0f0"/>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right"
+            android:clickable="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily=""
+            android:text="Dompet Digital"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <ImageView
+            android:id="@+id/ovo"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/hr1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ovo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/atm"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_pemb"
+        android:layout_below="@+id/digital"
+        >
+
+        <View
+            android:id="@+id/hr2"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f0f0f0"/>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right"
+            android:clickable="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily=""
+            android:text="BANK"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <ImageView
+            android:id="@+id/bni"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/hr2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/bni" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tombol_book"
+        android:text="Booking Sekarang"
+        android:textColor="@color/colorWhite"/>
 
 
 </RelativeLayout>
