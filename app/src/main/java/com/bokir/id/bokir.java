@@ -3,14 +3,13 @@ package com.bokir.id;
 
 
 public class bokir {
-    String jdl,alamt,waktu;
-    int gbr;
+    String jdl,alamt,waktu,freeint;
 
-    public bokir(String judul,String alamat,String waktu,int gambar){
+    public bokir(String judul,String alamat,String waktu,String freeint){
         this.jdl=judul;
         this.alamt=alamat;
         this.waktu=waktu;
-        this.gbr=gambar;
+        this.freeint=freeint;
     }
 
     public String getJdl() {
@@ -37,11 +36,12 @@ public class bokir {
         this.waktu = waktu;
     }
 
-    public int getGbr() {
-        return gbr;
+
+    public String getFreeint() {
+        return freeint;
     }
 
-    public void setGbr(int gbr) {
-        this.gbr = gbr;
+    public void setFreeint(String freeint) {
+        this.freeint = freeint;
     }
 }
