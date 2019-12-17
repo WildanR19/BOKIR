@@ -47,9 +47,9 @@ public class BokirAdapter extends RecyclerView.Adapter<BokirAdapter.BokirViewHol
         Button btn;
         Context konteks;
         public String KEY_JDL = "judul";
-        public String KEY_ALM = "judul";
-        public String KEY_WKT = "judul";
-        public String KEY_FREE = "judul";
+        public String KEY_ALM = "alamat";
+        public String KEY_WKT = "waktu";
+        public String KEY_HRG = "harga";
 
         public BokirViewHolder(View itemView) {
             super(itemView);
@@ -70,8 +70,9 @@ public class BokirAdapter extends RecyclerView.Adapter<BokirAdapter.BokirViewHol
                         i.putExtra(KEY_JDL, bokirs.get(position).getJdl());
                         i.putExtra(KEY_ALM, bokirs.get(position).getAlamt());
                         i.putExtra(KEY_WKT, bokirs.get(position).getWaktu());
-                        i.putExtra(KEY_FREE, bokirs.get(position).getFreeint());
+                        i.putExtra(KEY_HRG, bokirs.get(position).getHrg());
                         konteks.startActivity(i);
+                        System.exit(0);
                     }
                 }
             });

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".DetailPembayaran"
+    tools:context=".Pembayaran"
     android:background="#f0f0f0"
     android:padding="15dp">
 
+
     <RelativeLayout
-        android:id="@+id/detail"
+        android:id="@+id/dptdigital"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="70dp"
         android:background="@drawable/bg_pemb"
         android:layout_marginBottom="10dp"
         >
@@ -29,50 +30,28 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:fontFamily=""
-            android:text="Booking Detail"
+            android:text="Dompet Digital"
             app:fontFamily="sans-serif-smallcaps" />
 
-        <TextView
-            android:id="@+id/tempat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+        <ImageView
+            android:id="@+id/ovo"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/hr1"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
-            android:layout_below="@+id/hr1"
-            android:fontFamily=""
-            android:text="Nama Tempat"
-            app:fontFamily="sans-serif-smallcaps" />
-        <TextView
-            android:id="@+id/Hrg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/tempat"
-            android:text="Harga"
-            app:fontFamily="sans-serif-smallcaps" />
-        <TextView
-            android:id="@+id/alm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@+id/Hrg"
-            android:text="Alamat"
-            app:fontFamily="sans-serif-smallcaps" />
-
-
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/ovo" />
 
 
 
     </RelativeLayout>
 
-
     <RelativeLayout
-        android:id="@+id/map"
+        android:id="@+id/bank"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_below="@+id/detail"
+        android:layout_height="70dp"
+        android:layout_below="@+id/dptdigital"
         android:background="@drawable/bg_pemb"
         android:layout_marginBottom="10dp"
         >
@@ -90,28 +69,59 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:fontFamily=""
-            android:text="Map"
+            android:text="Bank"
             app:fontFamily="sans-serif-smallcaps" />
 
         <ImageView
-            android:id="@+id/gbrmap"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/hr2"
-            app:srcCompat="@drawable/map" />
+            android:id="@+id/bni"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/hr2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/bni" />
 
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SaldoBokir"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/bank"
+        android:background="@drawable/bg_pemb"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="Saldo Bokir"
+            app:fontFamily="sans-serif-smallcaps"
+            android:textSize="17dp"/>
+
+        <ImageView
+            android:id="@+id/arr1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/right" />
 
     </RelativeLayout>
 
 
     <Button
-        android:id="@+id/book"
+        android:id="@+id/dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/tombol_book"
-        android:text="Booking Sekarang"
+        android:text="DP Sekarang"
         android:textColor="@color/colorWhite" />
-
 
 </RelativeLayout>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bokir.id">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -9,7 +11,17 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScanActivity"
+        <activity android:name=".Riwayat"></activity>
+        <activity
+            android:name=".Pembayaran"
+            android:parentActivityName=".DetailPembayaran"
+            android:theme="@style/SettingTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DetailPembayaran" />
+        </activity>
+        <activity
+            android:name=".ScanActivity"
             android:parentActivityName=".MainActivity"
             android:theme="@style/SettingTheme">
             <meta-data
@@ -35,7 +47,7 @@
         <activity android:name=".RegisActivity" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,6 +66,7 @@
         </activity>
         <activity
             android:name=".DetailPembayaran"
+            android:theme="@style/SettingTheme"
             android:parentActivityName=".CariActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

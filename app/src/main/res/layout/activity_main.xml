@@ -1,4 +1,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -155,27 +157,30 @@
                     android:layout_width="150dp"
                     android:layout_height="184dp" />
 
-                <TextView android:id="@+id/scan"
-                    android:fontFamily="Helvetica Neue"
-                    android:layout_gravity="center_horizontal|center"
-                    android:gravity="center"
-                    android:textSize="16sp"
-                    android:textColor="@color/booking_parkir_ek1_color"
-                    android:layout_marginLeft="54dp"
-                    android:layout_marginTop="137dp"
-                    android:layout_width="41dp"
+                <TextView
+                    android:id="@+id/reward"
+                    android:layout_width="51dp"
                     android:layout_height="20dp"
-                    android:text="@string/scan_string"
-                    />
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="137dp"
+                    android:fontFamily="Helvetica Neue"
+                    android:gravity="center"
+                    android:text="Hadiah"
+                    android:textColor="@color/booking_parkir_ek1_color"
+                    android:textSize="16sp" />
 
-                <ImageView android:id="@+id/qr_code"
-                    android:src="@drawable/qr_code"
-                    android:contentDescription="qr_code"
-                    android:layout_marginLeft="31dp"
-                    android:layout_marginStart="31dp"
-                    android:layout_marginTop="35dp"
+                <ImageView
+                    android:id="@+id/ic_reward"
                     android:layout_width="88dp"
-                    android:layout_height="88dp" />
+                    android:layout_height="88dp"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="35dp"
+                    android:contentDescription="ic_reward"
+                    android:src="@drawable/icon_reward"
+                    app:srcCompat="@drawable/icon_reward"
+                    tools:srcCompat="@drawable/icon_reward" />
 
             </RelativeLayout>
 
