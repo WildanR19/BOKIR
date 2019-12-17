@@ -9,7 +9,9 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScanActivity"
+        <activity android:name=".Reward"></activity>
+        <activity
+            android:name=".ScanActivity"
             android:parentActivityName=".MainActivity"
             android:theme="@style/SettingTheme">
             <meta-data
@@ -35,7 +37,7 @@
         <activity android:name=".RegisActivity" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,11 +56,31 @@
         </activity>
         <activity
             android:name=".DetailPembayaran"
-            android:theme="@style/Deskripsi"
-            android:parentActivityName=".CariActivity">
+            android:parentActivityName=".CariActivity"
+            android:theme="@style/Deskripsi">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".CariActivity" />
+        </activity>
+        <activity android:name=".Pembayaran"
+            android:theme="@style/SettingTheme"
+            android:parentActivityName=".DetailPembayaran">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DetailPembayaran"
+                />
+
+        </activity>
+
+        <activity android:name=".Riwayat"
+            android:theme="@style/SettingTheme"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
         </activity>
 
         <meta-data

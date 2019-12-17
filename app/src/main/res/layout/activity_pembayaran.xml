@@ -8,11 +8,91 @@
     android:background="#f0f0f0"
     android:padding="15dp">
 
+    <TextView
+        android:id="@+id/JdlBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Detail Booking"
+        app:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/JdlBook"
+        android:background="@drawable/bg_pemb"
+        android:layout_marginBottom="10dp"
+        >
+
+        <View
+            android:id="@+id/hr"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f0f0f0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily=""
+            android:text="Booking Detail"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <TextView
+            android:id="@+id/tempat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/hr"
+            android:fontFamily=""
+            android:text="Nama Tempat"
+            app:fontFamily="sans-serif-smallcaps" />
+        <TextView
+            android:id="@+id/Hrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tempat"
+            android:text="Harga"
+            app:fontFamily="sans-serif-smallcaps" />
+        <TextView
+            android:id="@+id/alm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/Hrg"
+            android:text="Alamat"
+            app:fontFamily="sans-serif-smallcaps" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/JdlPemb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Pilih Metode Pembayaran"
+        android:layout_below="@+id/detail"
+        app:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+       />
 
     <RelativeLayout
         android:id="@+id/dptdigital"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_below="@+id/JdlPemb"
         android:background="@drawable/bg_pemb"
         android:layout_marginBottom="10dp"
         >
