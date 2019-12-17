@@ -43,7 +43,7 @@ public class Pembayaran extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 new SweetAlertDialog(Pembayaran.this, SweetAlertDialog.SUCCESS_TYPE)
-                        .setTitleText("Pembyaran Berhasil")
+                        .setTitleText("Pembayaran Berhasil")
                         .setConfirmText("Lihat Tiket Parkir")
                         .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                     @Override
