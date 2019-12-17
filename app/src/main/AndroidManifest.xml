@@ -9,7 +9,13 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Reward"></activity>
+        <activity android:name=".Reward"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SettingTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".ScanActivity"
             android:parentActivityName=".MainActivity"

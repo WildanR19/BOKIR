@@ -9,9 +9,9 @@
     android:padding="15dp">
 
     <RelativeLayout
-        android:id="@+id/detail"
+        android:id="@+id/digital"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="90dp"
         android:background="@drawable/bg_pemb"
         android:layout_marginBottom="10dp"
         >
@@ -23,58 +23,42 @@
             android:layout_height="2dp"
             android:background="#f0f0f0"/>
 
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right"
+            android:clickable="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:fontFamily=""
-            android:text="Booking Detail"
+            android:text="Dompet Digital"
             app:fontFamily="sans-serif-smallcaps" />
 
-        <TextView
-            android:id="@+id/tempat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+        <ImageView
+            android:id="@+id/ovo"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/hr1"
-            android:fontFamily=""
-            android:text="Nama Tempat"
-            app:fontFamily="sans-serif-smallcaps" />
-        <TextView
-            android:id="@+id/Hrg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/tempat"
-            android:text="Harga"
-            app:fontFamily="sans-serif-smallcaps" />
-        <TextView
-            android:id="@+id/alm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@+id/Hrg"
-            android:text="Alamat"
-            app:fontFamily="sans-serif-smallcaps" />
-
-
-
-
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ovo" />
 
     </RelativeLayout>
 
-
     <RelativeLayout
-        android:id="@+id/map"
+        android:id="@+id/atm"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_below="@+id/detail"
+        android:layout_height="90dp"
         android:background="@drawable/bg_pemb"
-        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/digital"
         >
 
         <View
@@ -84,34 +68,43 @@
             android:layout_height="2dp"
             android:background="#f0f0f0"/>
 
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right"
+            android:clickable="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:fontFamily=""
-            android:text="Map"
+            android:text="BANK"
             app:fontFamily="sans-serif-smallcaps" />
 
         <ImageView
-            android:id="@+id/gbrmap"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/bni"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/hr2"
-            app:srcCompat="@drawable/map" />
-
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/bni" />
 
     </RelativeLayout>
 
-
     <Button
-        android:id="@+id/book"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/tombol_book"
         android:text="Booking Sekarang"
-        android:textColor="@color/colorWhite" />
+        android:textColor="@color/colorWhite"/>
 
 
 </RelativeLayout>
