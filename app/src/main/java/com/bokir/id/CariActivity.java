@@ -31,8 +31,8 @@ public class CariActivity extends AppCompatActivity {
 
     public void ambdata(){
         bokirs = new ArrayList<>();
-        bokirs.add(new bokir("Parkir Gedung D","Jl. Sadewa 2 No.8, Pendrikan Kidul","08.00-10.20","10/100"));
-        bokirs.add(new bokir("Parkir Mangga 2","Pendrikan Kidul, Kec. Semarang Tengah","08.00-10.20","30/100"));
+        bokirs.add(new bokir("Parkir Gedung D","Jl. Sadewa 2 No.8, Pendrikan Kidul","08.00-10.20","10/100", "Rp. 3.000"));
+        bokirs.add(new bokir("Parkir Mangga 2","Pendrikan Kidul, Kec. Semarang Tengah","08.00-10.20","30/100", "Rp. 4.000"));
     }
 
 }
