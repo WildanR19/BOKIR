@@ -8,11 +8,47 @@
     android:background="#f0f0f0"
     android:padding="15dp">
 
+<RelativeLayout
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:translationZ="-10dp">
     <RelativeLayout
+        android:id="@+id/circle1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_rew"
+        android:translationZ="1dp">
+
+        <ImageView
+            android:id="@+id/sal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/ic_sal"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="-60dp"
+        android:layout_below="@+id/circle1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorWhite"
+        android:background="@drawable/bg_rew2"
         android:padding="10dp">
+
+        <TextView
+            android:id="@+id/limapuluh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:paddingTop="5dp"
+            android:text="Rp. 50.000"
+            android:textColor="#000000"
+            android:translationZ="3dp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-smallcaps"/>
 
         <Button
             android:id="@+id/scan"
@@ -26,4 +62,119 @@
             android:textColor="#fff" />
     </RelativeLayout>
 
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:translationZ="-10dp">
+        <RelativeLayout
+            android:id="@+id/circle2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_rew"
+            android:translationZ="1dp">
+
+            <ImageView
+                android:id="@+id/sal2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/ic_sal"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="-60dp"
+            android:layout_below="@+id/circle2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_rew2"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/seratus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:paddingTop="5dp"
+                android:text="Rp. 100.000"
+                android:textColor="#000000"
+                android:translationZ="3dp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-smallcaps"/>
+
+            <Button
+                android:id="@+id/scan2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/waktu"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:background="@drawable/tombol_book"
+                android:text="Redeem Code"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:translationZ="-10dp">
+        <RelativeLayout
+            android:id="@+id/circle3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_rew"
+            android:translationZ="1dp">
+
+            <ImageView
+                android:id="@+id/sal3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/ic_sal"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="-60dp"
+            android:layout_below="@+id/circle3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_rew2"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/limaratus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:paddingTop="5dp"
+                android:text="Rp. 500.000"
+                android:textColor="#000000"
+                android:translationZ="3dp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-smallcaps"/>
+
+            <Button
+                android:id="@+id/scan3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/waktu"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:background="@drawable/tombol_book"
+                android:text="Redeem Code"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+    </RelativeLayout>
 </RelativeLayout>
