@@ -103,7 +103,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/tombol_book"
-        android:text="Booking Sekarang"
+        android:text="Booking Dulu"
         android:textColor="@color/colorWhite"/>
 
 
