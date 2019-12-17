@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:elevation="5dp"
-        android:background="@drawable/bg_riw"
+        android:background="#fff"
         >
 
         <ImageView
@@ -59,7 +59,7 @@
             android:id="@+id/Judul"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Judul"
+            android:text="Parkir Gedung D"
             android:textStyle="bold"
             app:fontFamily="@font/amaranth"
             android:layout_marginTop="10dp"
@@ -67,12 +67,12 @@
 
         <TextView
             android:id="@+id/alamat"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/Judul"
             android:layout_alignLeft="@+id/Judul"
             android:paddingTop="5dp"
-            android:text="Alamat"
+            android:text="Jl. Sadewa 2 No.8, Pendrikan kidul"
             app:fontFamily="@font/amaranth" />
 
         <TextView
@@ -82,13 +82,14 @@
             android:layout_below="@+id/alamat"
             android:layout_alignLeft="@+id/alamat"
             android:paddingTop="5dp"
-            android:text="Waktu Buka"
+            android:text="Status : Belum Parkir"
             app:fontFamily="@font/amaranth" />
 
 
 
         <Button
-            android:id="@+id/book"
+            android:onClick="showDialog"
+            android:id="@+id/scan"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_below="@+id/waktu"
@@ -96,8 +97,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
+            android:padding="5dp"
             android:background="@drawable/tombol_book"
-            android:text="Booking"
+            android:text="SCAN Qr"
             android:textColor="#fff" />
 
 
