@@ -85,7 +85,7 @@
             android:text="Waktu Buka"
             app:fontFamily="@font/amaranth" />
 
-        
+
 
         <Button
             android:id="@+id/book"
