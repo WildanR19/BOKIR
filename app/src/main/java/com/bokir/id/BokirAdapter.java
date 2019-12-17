@@ -72,7 +72,6 @@ public class BokirAdapter extends RecyclerView.Adapter<BokirAdapter.BokirViewHol
                         i.putExtra(KEY_WKT, bokirs.get(position).getWaktu());
                         i.putExtra(KEY_HRG, bokirs.get(position).getHrg());
                         konteks.startActivity(i);
-                        System.exit(0);
                     }
                 }
             });
