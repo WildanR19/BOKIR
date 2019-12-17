@@ -10,5 +10,8 @@ public class Reward extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reward);
+
+        getSupportActionBar().setTitle("Hadiah");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

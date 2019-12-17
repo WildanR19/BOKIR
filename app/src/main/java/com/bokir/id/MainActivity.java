@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
-    RelativeLayout item,itemlog,itemset,itemcon,itemrriwayat,itemscan;
+    RelativeLayout item,itemlog,itemset,itemcon,itemrriwayat,itemreward;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         itemset = (RelativeLayout) findViewById(R.id.item_ek4);
         itemcon = (RelativeLayout) findViewById(R.id.item_ek3);
         itemrriwayat = (RelativeLayout) findViewById(R.id.item_ek1);
-        itemscan = (RelativeLayout) findViewById(R.id.item_ek2);
+        itemreward = (RelativeLayout) findViewById(R.id.item_ek2);
         item = (RelativeLayout) findViewById(R.id.item);
         item.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        itemscan.setOnClickListener(new View.OnClickListener() {
+        itemreward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, ScanActivity.class);
+                Intent i = new Intent(MainActivity.this, Reward.class);
                 startActivity(i);
             }
         });
