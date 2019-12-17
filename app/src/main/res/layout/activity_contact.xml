@@ -5,30 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/orange">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="405dp">
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
         <LinearLayout
-            android:background="@drawable/gradient_orange"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
             <ImageView
                 android:layout_marginTop="45dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:src="@drawable/logo"/>
             <TextView
-                android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bokir \nBooking Parkir"
-                android:textColor="#fff"
+                android:text="Contact"
+                android:textColor="#000"
                 android:textStyle="bold"
-                android:textSize="21sp"/>
+                android:textSize="36sp"/>
         </LinearLayout>
 
     </RelativeLayout>
@@ -38,23 +39,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_marginTop="45dp">
+        android:layout_marginTop="45dp"
+        >
         <LinearLayout
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/mail"/>
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/gmail"/>
             <TextView
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="Wiliam@gmail.com"/>
+                android:textSize="16dp"
+                android:text="bokir.indonesia@gmail.com"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="25dp"
@@ -63,17 +66,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/bell"/>
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/wa"/>
             <TextView
                 android:textStyle="bold"
-
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="+266 225 225"/>
+                android:textSize="16dp"
+                android:text="0838-2468-8881"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="25dp"
@@ -82,9 +85,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/star"/>
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/fb"/>
             <TextView
                 android:textStyle="bold"
 
@@ -92,7 +95,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="Add to group"/>
+                android:textSize="16dp"
+                android:text="bokir.app"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="25dp"
@@ -101,27 +105,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/like"/>
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ig"/>
             <TextView
                 android:textStyle="bold"
-
+                android:textSize="16dp"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="Show all comments"/>
+                android:text="bokir.app"/>
         </LinearLayout>
     </LinearLayout>
-
-    <Button
-        android:textColor="#fff"
-        android:background="@drawable/bt_uigoogle"
-        android:layout_marginTop="35dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Follow Me"/>
 
 </LinearLayout>
