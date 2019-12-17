@@ -13,5 +13,6 @@ public class Reward extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Hadiah");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 }

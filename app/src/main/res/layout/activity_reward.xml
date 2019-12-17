@@ -8,4 +8,9 @@
     android:background="#f0f0f0"
     android:padding="15dp">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"/>
+
 </RelativeLayout>
