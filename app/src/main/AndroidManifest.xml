@@ -54,6 +54,7 @@
         </activity>
         <activity
             android:name=".DetailPembayaran"
+            android:theme="@style/Deskripsi"
             android:parentActivityName=".CariActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
