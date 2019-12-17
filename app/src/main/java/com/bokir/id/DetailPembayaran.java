@@ -43,8 +43,6 @@ public class DetailPembayaran extends AppCompatActivity {
         alm.setText(alam);
         hrg.setText(Hrg);
 
-
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
